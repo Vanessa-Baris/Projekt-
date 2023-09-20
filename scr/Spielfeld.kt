@@ -6,7 +6,6 @@ open class Spielfeld() {
 
     fun spielfeld1() {
         println("Du befindest dich auf Spielfeld $spielerPosition")
-        Thread.sleep(3000)
     }
 
      fun willkommensText (){
