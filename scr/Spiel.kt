@@ -8,8 +8,6 @@ class Spiel() {
         Spielfeld(true , false)
     )
 
-    var list2 =
-
     fun spielSpielen(){
         for (spielfeld in list) {
             if (spielfeld.wand bb) {

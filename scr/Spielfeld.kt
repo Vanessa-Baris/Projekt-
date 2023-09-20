@@ -2,7 +2,7 @@ import kotlin.concurrent.thread
 
 open class Spielfeld(var falle: Boolean , var wand: Boolean) {
 
-
+    public open var wand: Wand = Wand()
 
     fun willkommensText (){
         println("Willkommen im Labyrinth! Bist du bereit dieses zu meistern?")
@@ -21,7 +21,7 @@ open class Spielfeld(var falle: Boolean , var wand: Boolean) {
         return richtung
     }
 
-    fun kreuzung1(){
+    fun kreuzung1(list: mu){
 
         var richtung = richtungsauswahl()
 
@@ -30,7 +30,7 @@ open class Spielfeld(var falle: Boolean , var wand: Boolean) {
         } else if (richtung == "Westen") {
             println("Du gehst nach Westen und wirst zurück zum Anfang katapultiert. ${spielfeld1()}")
         } else if (richtung == "Süden") {
-            println("Du gehst nach Süden und kommst an eine ")
+            println("Du gehst nach Süden und kommst an eine $wand1")
         } else {
             println("Ungültige Eingabe. Bitte wähle 'Osten', 'Westen' oder 'Süden'.")
         }

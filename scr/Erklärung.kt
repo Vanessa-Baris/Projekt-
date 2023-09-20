@@ -1,5 +1,5 @@
 /*
-Es gibt Wände, Fallen, Spielfelder, ein Spiel
+Es gibt 5 Wände, 3 Fallen, 7 Spielfelder, ein Spiel
 
 Ich möchte in die Main nur Funktionsaufrufe machen , keine fun etc
 
