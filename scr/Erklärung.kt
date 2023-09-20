@@ -9,6 +9,8 @@ in den Kreuzungen werden je nachdem welcher Weg man wählt nochmal andere Funkti
 
 Man hat 5 Hp Punkte
 
+Geist und Drache sind nur println
+
 Bei Fallen werden 1 Punkt abgezogen
 
 Einfach und schlank wie möglich, darauf liegt mein Fokus
