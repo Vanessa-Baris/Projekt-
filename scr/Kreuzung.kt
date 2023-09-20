@@ -11,7 +11,7 @@ open class Kreuzung(): Spielfeld() {
             } else if (richtung == "Westen") {
                 println("Du gehst nach Westen und wirst zurück zum Anfang katapultiert. ${spielfeld1()}")
             } else if (richtung == "Süden") {
-                println("Du gehst nach Süden und ")
+                println("Du gehst nach Süden und kommst an eine $wand1")
             } else {
                 println("Ungültige Eingabe. Bitte wähle 'Osten', 'Westen' oder 'Süden'.")
             }
