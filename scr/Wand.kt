@@ -1,2 +1,2 @@
-class Wand() {
+open class Wand() {
 }

@@ -1,2 +1,2 @@
-class Falle() {
+open class Falle() {
 }

@@ -1,2 +1,2 @@
-class Kreuzung() {
+open class Kreuzung() {
 }
