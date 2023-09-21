@@ -2,13 +2,18 @@ import kotlin.concurrent.thread
 
 open class Spielfeld(var text: String , var nächstesSpielfeld: Spielfeld? = null) {
 
-    // var vorherigesSpielfeld: Spielfeld? = null
+    var vorherigesSpielfeld: Spielfeld? = null
 
 
     fun textAusdrucken() {
         println(text)
+        //Geht das so?
         println("Das nächste Spielfeld ist $nächstesSpielfeld.")
-       // println("Das vorherige Spielfeld ist $vorherigesSpielfeld.")
+        try {
+            println("Das vorherige Spielfeld ist $vorherigesSpielfeld.")
+        } catch (e: Exception) {
+            println("Fehler.")
+        }
     }
 
    open fun nächstesSpielfeld(): Spielfeld{

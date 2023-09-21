@@ -4,6 +4,8 @@ class Kreuzung(text: String): Spielfeld(text) {
         this.richtungsauswahl()
         return super.nächstesSpielfeld()
     }
+
+
 }
 
 
