@@ -44,9 +44,4 @@ class Spiel() {
             aktuellesSpielfeld = wand2.nächstesSpielfeld()
         }
     }
-
-
-
-
-
 }
