@@ -14,6 +14,14 @@ var wand1: Wand =Wand("""Wand mit scharfen Dornen. Du musst zurück $startSpielf
 
 var wand2: Wand = Wand("Du hast Glück! Die Wand ist sehr alt und bröcklig. Du tritts einmal dagegen, verlierst aber einen Lebenspunkt.")
 
+var wand3: Wand = Wand("")
+
+var kreuzung2: Kreuzung = Kreuzung("")
+
+var kreuzung3: Kreuzung = Kreuzung("")
+
+var
+
 
 class Spiel() {
 
@@ -30,6 +38,7 @@ class Spiel() {
             Thread.sleep(3000)
             aktuellesSpielfeld = aktuellesSpielfeld.nächstesSpielfeld()
             aktuellesSpielfeld = wand1.nächstesSpielfeld()
+            //funktioniert das:
             wand2.wand2(5)
             aktuellesSpielfeld = wand2.nächstesSpielfeld()
         }
