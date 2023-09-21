@@ -1,4 +1,4 @@
-open class Falle() {
+open class Falle(text:String): Spielfeld(text) {
 
 
 }
