@@ -1,8 +1,20 @@
 import kotlin.concurrent.thread
 
-open class Spielfeld(var falle: Boolean , var wand: Boolean, var kreuzung: String) {
+open class Spielfeld(var text: String , var nächstesSpielfeld: Spielfeld? = null) {
+
+    // var vorherigesSpielfeld: Spielfeld? = null
 
 
+    fun textAusdrucken() {
+        println(text)
+        println("Das nächste Spielfeld ist $nächstesSpielfeld.")
+       // println("Das vorherige Spielfeld ist $vorherigesSpielfeld.")
+    }
+
+   open fun nächstesSpielfeld(): Spielfeld{
+        return nächstesSpielfeld!!
+
+    }
     fun willkommensText (){
         println("Willkommen im Labyrinth! Bist du bereit dieses zu meistern?")
          Thread.sleep(3000)
@@ -12,13 +24,13 @@ open class Spielfeld(var falle: Boolean , var wand: Boolean, var kreuzung: Strin
     }
 
 
-    fun richtungsauswahl(): String {
-        println("Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach Osten? Nach Westen? Oder nach Süden?")
-        var richtung = ""
-        richtung = readln()
-        println("Deine Wahl ist: $richtung")
-        return richtung
-    }
+   // fun richtungsauswahl(): Spielfeld {
+   //     println("Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach Osten? Nach Westen? Oder nach Süden?")
+    //    var richtung = ""
+    //    richtung = readln()
+    //    println("Deine Wahl ist: $richtung")
+    //    return Spielfeld()
+ //   }
 
 
 }

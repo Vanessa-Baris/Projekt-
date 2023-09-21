@@ -1,8 +1,9 @@
-open class Wand() {
+open class Wand(text: String): Spielfeld(text) {
 
-    fun wand1(){
-        println("Wand mit scharfen Dornen. Du musst zurück zu ${spielfeld1()}")
-    }
+
+   // fun wand1(){
+    //    println("Wand mit scharfen Dornen. Du musst zurück zu ${spielfeld1()}")
+  //  }
 
     fun wand2(hp: Int){
         var aktuelleHp = hp - 1

@@ -1,39 +1,33 @@
+
+
+var startKreuzung: Kreuzung = Kreuzung("""Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach Osten? Nach Westen? Oder nach Süden?")
+""")
+
+var startSpielfeld: Spielfeld =  Spielfeld("""Willkommen im Labyrinth! Bist du bereit dieses zu meistern?
+                        
+               Aber Vorsicht! Im Labyrinth lauert ein kleines Gespenst und ein großer Drache auf dich.
+                    
+               Bei jeder Kreuzung musst du dich für eine der vier Richtungen entscheiden. Wähle weise und bleib am Leben.""",
+    startKreuzung)
+
+var wand1: Wand =Wand("""Wand mit scharfen Dornen. Du musst zurück.""")
+
+
 class Spiel() {
 
+    var aktuellesSpielfeld: Spielfeld = startSpielfeld
 
-
-    var list = mutableListOf<Spielfeld>(
-        Spielfeld(false , false) ,
-        Spielfeld(false , true) ,
-        Spielfeld(true , true),
-        Spielfeld(false , true),
-        Spielfeld(true , false)
-    )
 
     fun spielSpielen(){
-        for (spielfeld in list) {
-            if (spielfeld.wand bb) {
-                spielfeld.richtungsauswahl()
-                spielfeld.kreuzung1()
-            }
+        while (true){
+            aktuellesSpielfeld.textAusdrucken()
+            Thread.sleep(3000)
+            aktuellesSpielfeld = aktuellesSpielfeld.nächstesSpielfeld()
         }
     }
 
 
-    fun kreuzung1(list: mu){
 
-        var richtung = richtungsauswahl()
-
-        if (richtung == "Osten") {
-            println("Du gehst nach Osten und kommst zu einer neuen Kreuzung ${spielfeld3()}")
-        } else if (richtung == "Westen") {
-            println("Du gehst nach Westen und wirst zurück zum Anfang katapultiert. ${spielfeld1()}")
-        } else if (richtung == "Süden") {
-            println("Du gehst nach Süden und kommst an eine $wand1")
-        } else {
-            println("Ungültige Eingabe. Bitte wähle 'Osten', 'Westen' oder 'Süden'.")
-        }
-    }
 
 
 }
