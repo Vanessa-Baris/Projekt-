@@ -20,7 +20,9 @@ class Spiel() {
 
     fun spielSpielen(){
         while (true){
-            aktuellesSpielfeld.textAusdrucken()
+            startSpielfeld.textAusdrucken()
+            Thread.sleep(3000)
+            Spieler("" , 5).spielerAuswahl()
             Thread.sleep(3000)
             aktuellesSpielfeld = aktuellesSpielfeld.nächstesSpielfeld()
         }

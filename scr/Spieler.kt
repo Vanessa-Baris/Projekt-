@@ -1,7 +1,8 @@
+
+
 open class Spieler(name: String , hp: Int) {
 
-        var hp: Int = 5
-
+    var hp: Int = 5
 
 
     fun spielerAuswahl(){
