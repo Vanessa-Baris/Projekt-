@@ -20,7 +20,11 @@ var kreuzung2: Kreuzung = Kreuzung("")
 
 var kreuzung3: Kreuzung = Kreuzung("")
 
-var
+var falle1: Falle = Falle()
+
+var falle2: Falle = Falle()
+
+var endSpielfeld: Spielfeld = Spielfeld("")
 
 
 class Spiel() {
