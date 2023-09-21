@@ -1,7 +1,6 @@
 import kotlin.concurrent.thread
-
 open class Spielfeld(var text: String , var nächstesSpielfeld: Spielfeld? = null) {
-
+//null , muss ich noch machen
     var vorherigesSpielfeld: Spielfeld? = null
 
 

@@ -12,19 +12,26 @@ var startSpielfeld: Spielfeld =  Spielfeld("""Willkommen im Labyrinth! Bist du b
 
 var wand1: Wand =Wand("""Wand mit scharfen Dornen. Du musst zurück $startSpielfeld.""")
 
+var wand2: Wand = Wand("Du hast Glück! Die Wand ist sehr alt und bröcklig. Du tritts einmal dagegen, verlierst aber einen Lebenspunkt.")
+
 
 class Spiel() {
+
 
     var aktuellesSpielfeld: Spielfeld = startSpielfeld
 
 
     fun spielSpielen(){
+
         while (true){
             startSpielfeld.textAusdrucken()
             Thread.sleep(3000)
             Spieler("" , 5).spielerAuswahl()
             Thread.sleep(3000)
             aktuellesSpielfeld = aktuellesSpielfeld.nächstesSpielfeld()
+            aktuellesSpielfeld = wand1.nächstesSpielfeld()
+            wand2.wand2(5)
+            aktuellesSpielfeld = wand2.nächstesSpielfeld()
         }
     }
 
