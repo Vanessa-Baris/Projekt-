@@ -10,7 +10,7 @@ var startSpielfeld: Spielfeld =  Spielfeld("""Willkommen im Labyrinth! Bist du b
                Bei jeder Kreuzung musst du dich für eine der vier Richtungen entscheiden. Wähle weise und bleib am Leben.""",
     startKreuzung)
 
-var wand1: Wand =Wand("""Wand mit scharfen Dornen. Du musst zurück.""")
+var wand1: Wand =Wand("""Wand mit scharfen Dornen. Du musst zurück $startSpielfeld.""")
 
 
 class Spiel() {

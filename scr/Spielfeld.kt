@@ -24,13 +24,13 @@ open class Spielfeld(var text: String , var nächstesSpielfeld: Spielfeld? = nul
     }
 
 
-   // fun richtungsauswahl(): Spielfeld {
-   //     println("Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach Osten? Nach Westen? Oder nach Süden?")
-    //    var richtung = ""
-    //    richtung = readln()
-    //    println("Deine Wahl ist: $richtung")
-    //    return Spielfeld()
- //   }
+    fun richtungsauswahl(): Spielfeld {
+       println("Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach Osten? Nach Westen? Oder nach Süden?")
+        var richtung = ""
+        richtung = readln()
+        println("Deine Wahl ist: $richtung")
+        return Spielfeld("" , nächstesSpielfeld)
+    }
 
 
 }
