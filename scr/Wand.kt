@@ -5,6 +5,9 @@ open class Wand(text: String): Spielfeld(text) {
         val aktuelleHp = hp - 1
         val hp: Int = aktuelleHp
         println("Aktuelle Lebenspunkte: $hp")
+    }
+
+    open fun wand3(){
 
     }
 }
