@@ -1,4 +1,4 @@
-class Spiel() {
+open class Spiel() {
 
 
     var aktuellesSpielfeld: Spielfeld = startSpielfeld
