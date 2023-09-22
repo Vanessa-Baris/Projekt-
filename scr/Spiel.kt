@@ -4,18 +4,19 @@ open class Spiel() {
     var aktuellesSpielfeld: Spielfeld = startSpielfeld
 
 
-    fun spielSpielen(){
+    fun spielSpielen() {
         startSpielfeld.textAusdrucken()
         Thread.sleep(3000)
-        Spieler("" , 5).spielerAuswahl()
+        Spieler("", 5).spielerAuswahl()
         Thread.sleep(3000)
-        while (true){
+        while (true) {
             aktuellesSpielfeld = aktuellesSpielfeld.nächstesSpielfeld()
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = wand1.nächstesSpielfeld()
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
-            //funktioniert das so?:
-            aktuellesSpielfeld = wand2.damage(Spieler("" , 5))
+            aktuellesSpielfeld = wand2
+            wand2.damage(Spieler("", 5))
         }
     }
 }
+
