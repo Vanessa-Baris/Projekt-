@@ -9,6 +9,15 @@ open class Wand(text: String , var damage: Int): Spielfeld(text) {
         }
     }
 
+    fun damage2(spieler: Spieler) {
+        if (spieler.hp > 0) {
+            spieler.hp -= 2
+            println("Aktuelle Lebenspunkte: ${spieler.hp}")
+        } else {
+            println("Du hast kein verfügbares Leben mehr. Du hast verloren.")
+        }
+    }
+
 
 
 
