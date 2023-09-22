@@ -9,6 +9,7 @@ open class Wand(text: String , var damage: Int): Spielfeld(text) {
         }
     }
 
+    //Überflüssig?
     fun damage2(spieler: Spieler) {
         if (spieler.hp > 0) {
             spieler.hp -= damage
