@@ -1,11 +1,14 @@
-open class Wand(text: String): Spielfeld(text) {
+open class Wand(text: String , var damage: Int): Spielfeld(text) {
 
-
-   open fun wand2(hp: Int){
-        val aktuelleHp = hp - 1
-        val hp: Int = aktuelleHp
+    fun damage(spieler: Spieler) {
+        val aktuelleHp = spieler.hp
+        var
         println("Aktuelle Lebenspunkte: $hp")
+
+        if ()
     }
+
+
 
     open fun wand3(){
 
