@@ -15,7 +15,7 @@ open class Spiel() {
             aktuellesSpielfeld = wand1.nächstesSpielfeld()
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             //funktioniert das so?:
-            aktuellesSpielfeld = wand2.nächstesSpielfeld()
+            aktuellesSpielfeld = wand2.damage(Spieler("" , 5))
         }
     }
 }
