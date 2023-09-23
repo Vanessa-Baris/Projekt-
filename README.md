@@ -8,3 +8,10 @@
 <span style="color:black">|</span> <span style="color:darkgreen">Können unter Beweis stellen</span>   <span style="color:black">|</span> <span style="color:darkgreen">Spielspaß</span>   <span style="color:black">|</span>
 <span style="color:black">|</span> <span style="color:darkred">5 Lebenspunkte</span>   <span style="color:black">|</span> <span style="color:darkred">Versteckte Fallen</span>   <span style="color:black">|</span>
 
+
+
+,d88b.d88b,
+88888888888
+`Y8888888Y'
+ `Y888Y'  
+   `Y'    
