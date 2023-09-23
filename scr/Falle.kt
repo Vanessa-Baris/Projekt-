@@ -17,6 +17,4 @@ open class Falle(text:String , var damage: Int , var riddle: Boolean): Spielfeld
             println("Du hast das Rätsel nicht gelöst und musst zurück. $startSpielfeld")
         }
     }
-
-
 }
