@@ -7,7 +7,7 @@ open class Spiel() {
 
 
     fun spielSpielen() {
-        var durchläufe = 0
+        val durchläufe = 0
         startSpielfeld.textAusdrucken()
         Thread.sleep(3000)
         Spieler("", 5).spielerAuswahl()
