@@ -1,5 +1,7 @@
 open class Spiel() {
 
+    var spieler: Spieler = Spieler("" , 5)
+
 
     var aktuellesSpielfeld: Spielfeld = startSpielfeld
 
@@ -9,7 +11,7 @@ open class Spiel() {
         Thread.sleep(3000)
         Spieler("", 5).spielerAuswahl()
         Thread.sleep(3000)
-        while (true) {
+        while ( < 0) {
             aktuellesSpielfeld = aktuellesSpielfeld.nächstesSpielfeld()
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = kreuzung1
