@@ -17,7 +17,7 @@ open class Spiel() {
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = kreuzung2
             aktuellesSpielfeld = wand2
-            wand2.damage(Spieler("", 5))
+            wand2.damage(Spieler("", 5) , 2)
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = kreuzung3
             aktuellesSpielfeld = falle1

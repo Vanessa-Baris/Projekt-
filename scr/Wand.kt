@@ -2,7 +2,7 @@ open class Wand(text: String , var damage: Int): Spielfeld(text) {
 
     override var vorherigesSpielfeld: Spielfeld? = null
 
-    fun damage(spieler: Spieler) {
+    fun damage(spieler: Spieler , damage: Int) {
         if (spieler.hp > 0) {
             spieler.hp -= damage
             println("Aktuelle Lebenspunkte: ${spieler.hp}")
