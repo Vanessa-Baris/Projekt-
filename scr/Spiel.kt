@@ -14,6 +14,7 @@ open class Spiel() {
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = kreuzung1
             aktuellesSpielfeld = wand1.nächstesSpielfeld()
+            wand1.damage(Spieler("" , 5) , 1)
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = kreuzung2
             aktuellesSpielfeld = wand2.nächstesSpielfeld()
