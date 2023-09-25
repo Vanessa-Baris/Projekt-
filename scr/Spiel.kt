@@ -27,6 +27,7 @@ open class Spiel() {
             aktuellesSpielfeld = wand3
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = falle2
+            falle2.damage2(Spieler("" , 5) , 2)
             aktuellesSpielfeld = endSpielfeld
         }
     }
