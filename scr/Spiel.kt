@@ -21,6 +21,7 @@ open class Spiel() {
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = kreuzung3
             aktuellesSpielfeld = falle1
+            falle1.riddle()
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = kreuzung1
             aktuellesSpielfeld = wand3
