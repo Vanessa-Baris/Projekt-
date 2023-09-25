@@ -16,15 +16,15 @@ open class Spiel() {
             aktuellesSpielfeld = wand1.nächstesSpielfeld()
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = kreuzung2
-            aktuellesSpielfeld = wand2
+            aktuellesSpielfeld = wand2.nächstesSpielfeld()
             wand2.damage(Spieler("", 5) , 2)
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = kreuzung3
-            aktuellesSpielfeld = falle1
+            aktuellesSpielfeld = falle1.nächstesSpielfeld()
             falle1.riddle()
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = kreuzung1
-            aktuellesSpielfeld = wand3
+            aktuellesSpielfeld = wand3.nächstesSpielfeld()
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = falle2
             falle2.damage2(Spieler("" , 5) , 2)
