@@ -7,11 +7,12 @@ open class Spiel() {
 
 
     fun spielSpielen() {
+        var durchläufe = 0
         startSpielfeld.textAusdrucken()
         Thread.sleep(3000)
         Spieler("", 5).spielerAuswahl()
         Thread.sleep(3000)
-        while ( < 0) {
+        while (durchläufe < 1) {
             aktuellesSpielfeld = aktuellesSpielfeld.nächstesSpielfeld()
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             aktuellesSpielfeld = kreuzung1
