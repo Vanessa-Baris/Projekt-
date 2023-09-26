@@ -3,7 +3,7 @@ open class Spiel() {
     var spieler: Spieler = Spieler("" , 5)
 
 
-    var aktuellesSpielfeld: Spielfeld = startSpielfeld
+   open var aktuellesSpielfeld: Spielfeld = startSpielfeld
 
 
     fun spielSpielen() {
