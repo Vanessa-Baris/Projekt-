@@ -7,7 +7,8 @@ Aber Vorsicht! Im Labyrinth lauert ein kleines Gespenst und ein großer Drache a
 Bei jeder Kreuzung musst du dich für eine der vier Richtungen entscheiden. Wähle weise und bleib am Leben.""",
  kreuzung1.nächstesSpielfeld())
 
-var wand1: Wand =Wand("""Wand mit scharfen Dornen. Du musst zurück $startSpielfeld.""" , 1)
+var wand1: Wand =Wand("""Wand mit scharfen Dornen. Du musst zurück $startSpielfeld.""" , 1
+)
 
 var wand2: Wand = Wand("Du hast Glück! Die Wand ist sehr alt und bröcklig. Du tritts einmal dagegen, verlierst aber einen Lebenspunkt." , 2)
 
