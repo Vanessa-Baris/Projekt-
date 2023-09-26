@@ -1,4 +1,4 @@
-open class Falle(text:String , var damage: Int , var riddle: Boolean): Spielfeld(text) {
+open class Falle(text:String , var damage: Int , var riddle: Boolean , nächstesSpielfeld: Spielfeld): Spielfeld(text, nächstesSpielfeld) {
     fun damage2(spieler: Spieler , damage: Int) {
         if (spieler.hp > 0) {
             spieler.hp -= damage

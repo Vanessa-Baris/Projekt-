@@ -1,4 +1,4 @@
-class Kreuzung(text: String): Spielfeld(text) {
+class Kreuzung(text: String, nächstesSpielfeld: Spielfeld?): Spielfeld(text, nächstesSpielfeld) {
 
     override var vorherigesSpielfeld: Spielfeld? = null
 

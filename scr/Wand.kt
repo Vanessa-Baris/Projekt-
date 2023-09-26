@@ -1,4 +1,4 @@
-open class Wand(text: String , var damage: Int): Spielfeld(text) {
+open class Wand(text: String , var damage: Int , nächstesSpielfeld: Spielfeld): Spielfeld(text , nächstesSpielfeld) {
 
     override var vorherigesSpielfeld: Spielfeld? = null
 
