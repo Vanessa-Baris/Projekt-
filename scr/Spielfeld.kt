@@ -1,7 +1,7 @@
 import kotlin.concurrent.thread
 open class Spielfeld(var text: String , var nächstesSpielfeld: Spielfeld? = null) {
 
-    open var vorherigesSpielfeld: Spielfeld = nächstesSpielfeld()
+   // open var vorherigesSpielfeld: Spielfeld = nächstesSpielfeld()
 
 
     fun textAusdrucken() {
@@ -12,7 +12,7 @@ open class Spielfeld(var text: String , var nächstesSpielfeld: Spielfeld? = nul
         //    println("Das vorherige Spielfeld ist $vorherigesSpielfeld.")
        // } catch (e: Exception) {
        //    println("Fehler.")
-        }
+      //  }
     }
 
     //und hier auch überlegen:

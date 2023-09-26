@@ -29,6 +29,7 @@ var kreuzung2: Kreuzung = Kreuzung("""Du bist an einer Kreuzung angelangt. Jetzt
 fun main() {
  kreuzung1.nächstesSpielfeld = wand1
 
+
  Spiel().spielSpielen()
 
 
