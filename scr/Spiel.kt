@@ -1,6 +1,7 @@
 open class Spiel() {
 
-    var spieler: Spieler = Spieler("" , 5)
+    var spieler: Spieler = Spieler("", 5)
+    var besuchteSpielfelder: MutableList<Spielfeld> = mutableListOf()
 
 
    open var aktuellesSpielfeld: Spielfeld = startSpielfeld
@@ -15,6 +16,7 @@ open class Spiel() {
         while (durchläufe < 1) {
             aktuellesSpielfeld = aktuellesSpielfeld.nächstesSpielfeld()
             aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
+            besuchteSpielfelder.add(aktuellesSpielfeld)
             aktuellesSpielfeld = kreuzung1
             aktuellesSpielfeld.textAusdrucken()
             aktuellesSpielfeld = kreuzung1.nächstesSpielfeld()
