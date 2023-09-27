@@ -1,7 +1,5 @@
 class Kreuzung(text: String, nächstesSpielfeld: Spielfeld? , var nächstesSpielfeldLinks: Spielfeld , var nächstesSpielfeldRechts: Spielfeld): Spielfeld(text, nächstesSpielfeld) {
 
-    var vorherigesSpielfeld: Spielfeld? = null
-
 
     override fun nächstesSpielfeld(): Spielfeld {
         return this.richtungsauswahl()
