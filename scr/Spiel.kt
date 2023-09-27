@@ -14,12 +14,13 @@ open class Spiel() {
         Spieler("", 5).spielerAuswahl()
         Thread.sleep(3000)
         while (durchläufe < 1) {
+            //aktuellesSpielfeld.textAusdrucken, und was nächstes Spielfeld ist
             aktuellesSpielfeld = aktuellesSpielfeld.nächstesSpielfeld()
-            aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
+            //aktuellesSpielfeld = aktuellesSpielfeld.richtungsauswahl()
             besuchteSpielfelder.add(aktuellesSpielfeld)
-            aktuellesSpielfeld = kreuzung1
+            //aktuellesSpielfeld = kreuzung1
             aktuellesSpielfeld.textAusdrucken()
-            aktuellesSpielfeld = kreuzung1.nächstesSpielfeld()
+           // aktuellesSpielfeld = kreuzung1.nächstesSpielfeld()
             aktuellesSpielfeld.textAusdrucken()
             wand1.damage(Spieler("" , 5) , 1)
             aktuellesSpielfeld = aktuellesSpielfeld.nächstesSpielfeld()
@@ -58,7 +59,9 @@ open class Spiel() {
             aktuellesSpielfeld = falle2.nächstesSpielfeld()
             falle2.damage2(Spieler("" , 5) , 2)
             aktuellesSpielfeld = endSpielfeld
+
         }
+        //du hast so viele Spielfelder besucht
     }
 }
 
