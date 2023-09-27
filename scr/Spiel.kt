@@ -61,7 +61,8 @@ open class Spiel() {
             aktuellesSpielfeld = endSpielfeld
 
         }
-        //du hast so viele Spielfelder besucht
+        var anzahlBesuchteSpielfelder = besuchteSpielfelder.size
+        println("Du hast ${anzahlBesuchteSpielfelder} Spielfelder besucht.")
     }
 }
 

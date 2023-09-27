@@ -1,6 +1,5 @@
 open class Wand(text: String , var damage: Int , nächstesSpielfeld: Spielfeld): Spielfeld(text , nächstesSpielfeld) {
 
-     var vorherigesSpielfeld: Spielfeld? = null
 
     fun damage(spieler: Spieler , damage: Int) {
         if (spieler.hp > 0) {
