@@ -1,7 +1,7 @@
-open class Wand(text: String , var damage: Int , nächstesSpielfeld: Spielfeld): Spielfeld(text , nächstesSpielfeld) {
+open class Wand(text: String , var damage: Int , var nächstesSpielfeld): Spielfeld(text) {
 
 
-    fun damage(spieler: Spieler , damage: Int) {
+    fun damage(spieler: Spieler) {
         if (spieler.hp > 0) {
             spieler.hp -= damage
             println("Aktuelle Lebenspunkte: ${spieler.hp}")

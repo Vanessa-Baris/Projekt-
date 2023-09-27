@@ -1,4 +1,4 @@
-class Kreuzung(text: String, nächstesSpielfeld: Spielfeld? , var nächstesSpielfeldLinks: Spielfeld , var nächstesSpielfeldRechts: Spielfeld): Spielfeld(text, nächstesSpielfeld) {
+class Kreuzung(text: String , var nächstesSpielfeldGeradeaus: Spielfeld ,  var nächstesSpielfeldLinks: Spielfeld , var nächstesSpielfeldRechts: Spielfeld): Spielfeld(text) {
 
 
     override fun nächstesSpielfeld(): Spielfeld {
@@ -11,7 +11,7 @@ class Kreuzung(text: String, nächstesSpielfeld: Spielfeld? , var nächstesSpiel
         return when (richtung) {
             "l" -> Spielfeld("links", nächstesSpielfeldLinks)
             "r" -> Spielfeld("rechts", nächstesSpielfeldRechts)
-            "g" -> Spielfeld("geradeaus", nächstesSpielfeld)
+            "g" -> Spielfeld("geradeaus", nächstesSpielfeldGeradeaus)
             else -> {
                 println("Ungültige Eingabe. Bitte wähle eine der drei Richtungen: links (l), rechts (r) oder geradeaus (g).")
                 richtungsauswahl()

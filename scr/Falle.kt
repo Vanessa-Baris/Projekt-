@@ -1,5 +1,5 @@
-open class Falle(text:String , var damage: Int , var riddle: Boolean , nächstesSpielfeld: Spielfeld): Spielfeld(text, nächstesSpielfeld) {
-    fun damage2(spieler: Spieler , damage: Int) {
+open class Falle(text:String , var damage: Int , var riddle: Boolean , nächstesSpielfeld: Spielfeld): Spielfeld(text) {
+    fun damage2(spieler: Spieler , ) {
         if (spieler.hp > 0) {
             spieler.hp -= damage
             println("Aktuelle Lebenspunkte: ${spieler.hp}")
