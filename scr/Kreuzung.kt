@@ -18,7 +18,6 @@ class Kreuzung(text: String, nächstesSpielfeld: Spielfeld? , var nächstesSpiel
             }
         }
     }
-
 }
 
 
