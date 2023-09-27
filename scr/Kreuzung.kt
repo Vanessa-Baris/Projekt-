@@ -1,4 +1,4 @@
-class Kreuzung(text: String , var nächstesSpielfeldGeradeaus: Spielfeld ,  var nächstesSpielfeldLinks: Spielfeld , var nächstesSpielfeldRechts: Spielfeld): Spielfeld(text) {
+class Kreuzung(text: String , var nächstesSpielfeldGeradeaus: Spielfeld ,  var nächstesSpielfeldLinks: Spielfeld , var nächstesSpielfeldRechts: Spielfeld): Spielfeld(text , nächstesSpielfeld) {
 
 
     override fun nächstesSpielfeld(): Spielfeld {
