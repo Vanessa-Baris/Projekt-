@@ -6,15 +6,17 @@ class Kreuzung(text: String, nächstesSpielfeld: Spielfeld? , var nächstesSpiel
     }
 
     open fun richtungsauswahl(): Spielfeld {
-        println("Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach links (l), rechts (r) oder geradeaus (g)? Achte auf Kleinschreibung.")
-        val richtung = readln()
+        println("Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach links (l), rechts (r) oder geradeaus (g)?")
+        val richtung = readln().lowercase()
         return when (richtung) {
-            "l" -> Spielfeld("links", nächstesSpielfeld)
-            "r" -> Spielfeld("rechts", nächstesSpielfeld)
+            "l" -> Spielfeld("links", nächstesSpielfeldLinks)
+            "r" -> Spielfeld("rechts", nächstesSpielfeldRechts)
             "g" -> Spielfeld("geradeaus", nächstesSpielfeld)
-            else -> Spielfeld("", nächstesSpielfeld)
+            else -> {
+                println("Ungültige Eingabe. Bitte wähle eine der drei Richtungen: links (l), rechts (r) oder geradeaus (g).")
+                richtungsauswahl()
+            }
         }
-    }
 }
 
 
