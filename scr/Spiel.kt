@@ -6,6 +6,8 @@ open class Spiel() {
 
    open var aktuellesSpielfeld: Spielfeld = startSpielfeld
 
+    val sieg = endSpielfeld
+
     fun spielSpielen() {
         val durchläufe = 0
         startSpielfeld.textAusdrucken()
@@ -13,7 +15,7 @@ open class Spiel() {
         var spieler: Spieler = Spieler("", 5)
         spieler.spielerAuswahl()
         Thread.sleep(3000)
-        val sieg = endSpielfeld
+        //funktioniert nicht:
         while (aktuellesSpielfeld !is sieg) {
             aktuellesSpielfeld.textAusdrucken()
             if (aktuellesSpielfeld is Falle){
