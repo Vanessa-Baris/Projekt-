@@ -14,8 +14,7 @@ open class Spiel() {
         var spieler: Spieler = Spieler("", 5)
         spieler.spielerAuswahl()
         Thread.sleep(3000)
-        while (durchläufe < 1) {
-            //aktuellesSpielfeld.textAusdrucken, und was nächstes Spielfeld ist
+        while (aktuellesSpielfeld !is endSpielfeld) {
             aktuellesSpielfeld.textAusdrucken()
             if (aktuellesSpielfeld is Falle){
                 (aktuellesSpielfeld as Falle).damage2(spieler)
