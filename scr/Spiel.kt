@@ -45,7 +45,7 @@ open class Spiel() {
             besuchteSpielfelder.add(aktuellesSpielfeld)
         }
         var anzahlBesuchteSpielfelder = besuchteSpielfelder.size
-        println("Du hast ${anzahlBesuchteSpielfelder} Spielfelder besucht.")
+        println("Du hast gewonnen. Du hast ${anzahlBesuchteSpielfelder} Spielfelder besucht.")
     }
 }
 
