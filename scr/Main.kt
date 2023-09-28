@@ -2,7 +2,7 @@ var falle1: Falle = Falle("""Du fällst in eine Grube. Um herauszukommen musst d
 
 var wand1: Wand =Wand("""Wand mit scharfen Dornen. Du musst zurück .""" , 1 , "wand1")
 
-var wand2: Wand = Wand("Du hast Glück! Die Wand ist sehr alt und bröcklig. Du tritts einmal dagegen, verlierst aber einen Lebenspunkt." , 2 , "wand2")
+var wand2: Wand = Wand("Du hast Glück! Die Wand ist sehr alt und bröcklig. Du tritts einmal dagegen, verlierst aber zwei Lebenspunkt." , 2 , "wand2")
 
 
 var wand3: Wand = Wand("""Du hast Glück! Die Wand erzittert vor deinem Anblick und lässt dich durch."""" , 0 , "wand3")
