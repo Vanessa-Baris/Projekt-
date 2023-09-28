@@ -14,3 +14,4 @@ open class Spieler(name: String , hp: Int) {
 
 
 }
+

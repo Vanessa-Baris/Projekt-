@@ -11,10 +11,4 @@ open class Spielfeld(var text: String , var nächstesSpielfeld: Spielfeld? = nul
        open fun nächstesSpielfeld(): Spielfeld{
        return nächstesSpielfeld!!
        }
-
-
-
-
-
-
 }
