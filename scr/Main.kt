@@ -4,11 +4,9 @@ var wand1: Wand =Wand("""Wand mit scharfen Dornen. Du musst zurück .""" , 1 , "
 
 var wand2: Wand = Wand("Du hast Glück! Die Wand ist sehr alt und bröcklig. Du tritts einmal dagegen, verlierst aber zweita Lebenspunkt." , 2 , "wand2")
 
-
 var wand3: Wand = Wand("""Du hast Glück! Die Wand erzittert vor deinem Anblick und lässt dich durch."""" , 0 , "wand3")
 
 var falle2: Falle = Falle("""Du verirrst dich und wirst vom frechen Gespenst am Ärmel zurückgehalten. Du verlierst dabei zwei Lebenspunkte. Schnell! Renn weg!"""" , 2 , false , "falle2")
-
 
 var kreuzung1 = Kreuzung("""Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach links? Nach rechts? Oder geradeaus?"""", wand2 , wand3 , falle1 , "kreuzung1")
 
