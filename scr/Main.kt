@@ -10,17 +10,17 @@ var wand3: Wand = Wand("""Du hast Glück! Die Wand erzittert vor deinem Anblick 
 var falle2: Falle = Falle("""Du verirrst dich und wirst vom frechen Gespenst am Ärmel zurückgehalten. Du verlierst dabei zwei Lebenspunkte. Schnell! Renn weg!"""" , 2 , false , "falle2")
 
 
-var kreuzung1 = Kreuzung("""Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach Osten? Nach Westen? Oder nach Süden?"""", wand2 , wand3 , falle1 , "kreuzung1")
+var kreuzung1 = Kreuzung("""Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach links? Nach rechts? Oder geradeaus?"""", wand2 , wand3 , falle1 , "kreuzung1")
 
-var kreuzung2: Kreuzung = Kreuzung("""Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach Osten? Nach Westen? Oder nach Süden?"""", wand1 , falle1 , falle2 , "kreuzung2")
+var kreuzung2: Kreuzung = Kreuzung("""Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach links? Nach rechts? Oder  geradeaus?"""", wand1 , falle1 , falle2 , "kreuzung2")
 
 var endSpielfeld: Spielfeld = Spielfeld("Du bist am Ziel angelangt. Herzlichen Glückwunsch!" , "endSpielfeld")
 
-var kreuzung3: Kreuzung = Kreuzung("""Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach Osten? Nach Westen? Oder nach Süden?"""", falle1 , wand1 ,  endSpielfeld , "kreuzung3")
+var kreuzung3: Kreuzung = Kreuzung("""Du bist an einer Kreuzung angelangt. Jetzt musst du eine der drei Richtungen wählen. Gehst du nach links? Nach rechts? Oder geradeaus?"""", falle1 , wand1 ,  endSpielfeld , "kreuzung3")
 
 var startSpielfeld: Kreuzung =  Kreuzung("""Willkommen im Labyrinth! Bist du bereit dieses zu meistern?
 Aber Vorsicht! Im Labyrinth lauert ein kleines Gespenst und ein großer Drache auf dich.
-Bei jeder Kreuzung musst du dich für eine der vier Richtungen entscheiden. Wähle weise und bleib am Leben.""" , wand1 , falle1 , wand3 , "startSpielfeld" )
+Bei jeder Kreuzung musst du dich für eine der drei Richtungen entscheiden. Wähle weise und bleib am Leben.""" , wand1 , falle1 , wand3 , "startSpielfeld" )
 
 fun main() {
 
