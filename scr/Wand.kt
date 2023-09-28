@@ -1,4 +1,4 @@
-open class Wand(text: String , var damage: Int , var nächstesSpielfeld): Spielfeld(text , nächstesSpielfeld) {
+open class Wand(text: String , var damage: Int , name: String): Spielfeld(text , name) {
 
 
     fun damage(spieler: Spieler) {

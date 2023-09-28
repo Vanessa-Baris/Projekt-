@@ -1,5 +1,6 @@
-open class Falle(text:String , var damage: Int , var riddle: Boolean , nächstesSpielfeld: Spielfeld): Spielfeld(text, nächstesSpielfeld) {
-    fun damage2(spieler: Spieler , ) {
+open class Falle(text:String , var damage: Int , var riddle: Boolean , name: String): Spielfeld(text, name) {
+
+    fun damage2(spieler: Spieler) {
         if (spieler.hp > 0) {
             spieler.hp -= damage
             println("Aktuelle Lebenspunkte: ${spieler.hp}")
@@ -8,12 +9,11 @@ open class Falle(text:String , var damage: Int , var riddle: Boolean , nächstes
         }
     }
 
-    //wie kann ich das verbauen?
-    fun riddle(){
+        fun riddle(){
         println("Dein Rätsel: Sams Vater hat 3 Töchter. Zwei von ihnen heißen Stephanie und Amanda. Wie lautet der Name der dritten Tochter?")
         var answer: String = readln()
         if (answer == "Sam") {
-            println("Richtig geraten! Du darfst weitergehen. ${nächstesSpielfeld()}")
+            println("Richtig geraten! Du darfst weitergehen.")
         } else {
             println("Du hast das Rätsel nicht gelöst und musst zurück. $startSpielfeld")
         }
