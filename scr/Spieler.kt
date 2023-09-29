@@ -1,4 +1,4 @@
-open class Spieler(name: String , hp: Int) {
+open class Spieler() {
 
     var hp: Int = 5
 
