@@ -8,7 +8,13 @@
 <span style="color:black">|</span> <span style="color:darkgreen">Können unter Beweis stellen</span>   <span style="color:black">|</span> <span style="color:darkgreen">Spielspaß</span>   <span style="color:black">|</span>
 <span style="color:black">|</span> <span style="color:darkred">5 Lebenspunkte</span>   <span style="color:black">|</span> <span style="color:darkred">Versteckte Fallen</span>   <span style="color:black">|</span>
 
-
+## <p style="font-family: 'fantasy', fantasy;"><span style="color:silver">Spielanleitung:</span></p>
+#### <p style="font-family: 'fantasy', fantasy;"><span style="color:silver">- Du beginnst das Spiel mit 5 Lebenspunkten.</span></p>
+#### <p style="font-family: 'fantasy', fantasy;"><span style="color:silver">- Wähle an Kreuzungen eine Richtung, indem Sie die entsprechende Zahl eingeben.</span></p>
+#### <p style="font-family: 'fantasy', fantasy;"><span style="color:silver">- Treffe kluge Entscheidungen, um das Labyrinth zu durchqueren.</span></p>
+#### <p style="font-family: 'fantasy', fantasy;"><span style="color:silver">- Löse Rätsel, um Fallen zu überwinden.</span></p>
+#### <p style="font-family: 'fantasy', fantasy;"><span style="color:silver">- Versuche deine Lebenspunkte zu behalten.</span></p>
+#### <p style="font-family: 'fantasy', fantasy;"><span style="color:silver">- Das Spiel endet, wenn du das Ziel erreichen oder alle Lebenspunkte verlieren.</span></p>
 
 <center><span style="color:red">,d888b.d888b,</span></center>          
 <center><span style="color:pink">88888<span style="color:blue">88</span>8888</span></center>
